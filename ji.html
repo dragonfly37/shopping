@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Do Hyeon", sans-serif;
+      }
+      .form-post {
+        border-width: 3px;
+        border-style: solid;
+        border-color: burlywood;
+        border-radius: 10px;
+
+        padding: 20px;
+
+        width: 500px;
+        margin: 2rem auto;
+      }
+      .moumou {
+        width: 450px;
+        height: auto;
+
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-post" id="post-box">
+      <div>
+        <button type="button" class="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <img
+          src="https://tumblbug-pci.imgix.net/0a67984fa5f64c8ba098fd5a26c48b67f8e47d48/1bf960e29957849f50bca8d89966663893153e75/987c7bdc62e22b6f31515ef7f5d2fecf30f5da15/a8fc9b4e-2949-46fe-b2b6-c5c19fe8a28b.jpg?ixlib=rb-1.1.0&w=1240&h=930&auto=format%2Ccompress&lossless=true&fit=crop&s=becbce856f525d88b12e4e026d1e477c"
+          class="moumou"
+        />
+        <span style="font-size: 40px; color: darksalmon;"
+          >모우모우 모찌인형</span
+        >
+        <span style="font-size: 20px;">10,000원/개</span>
+        <p>
+          <img
+            src="https://tumblbug-psi.imgix.net/0a67984fa5f64c8ba098fd5a26c48b67f8e47d48/1bf960e29957849f50bca8d89966663893153e75/987c7bdc62e22b6f31515ef7f5d2fecf30f5da15/f066ae5b-fd2d-4119-a86a-47bf124cc91d.png?ixlib=rb-1.1.0&w=620&auto=format%2C%20compress&lossless=true&ch=save-data&s=44025ac4798cce6008392c432e07356f"
+            class="moumou-birth"
+            style="width: 280px; height: auto; float: left; margin-right: 10px; margin-bottom: 10px;"
+          />
+          <span style="color: dimgray; font-size: 18px;">
+            도넛 도우로 만들어지다 떨어져 나가버린 비운의 잔여반죽 '모우모우'가
+            드디어 모찌인형으로 나왔습니다ㅠㅠ
+          </span>
+        </p>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="이름를 입력해 주세요."
+            aria-label="이름를 입력해 주세요."
+            aria-describedby="basic-addon1"
+          />
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >수량</label
+            >
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>--수량을 선택하세요.--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">주소</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="주소를 입력해 주세요."
+            aria-label="주소를 입력해 주세요."
+            aria-describedby="basic-addon1"
+          />
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">전화번호</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="전화번호를 입력해 주세요."
+            aria-label="전화번호를 입력해 주세요."
+            aria-describedby="basic-addon1"
+          />
+        </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-primary">주문하기</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
