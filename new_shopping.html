@@ -8,44 +8,56 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
 <style>
 
 * {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.form-post {
-         width: auto;
-        height: auto;
-
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-
-        border-radius: 50px;
-
-        padding: 20px;
-margin: 2rem auto;
-
-
-    
-}
-
-
-
 
 </style>
+
+
+<script>
+
+  function check() {
+    var order_name = $("#input-1").val();
+    var order_quantity = $("#inputGroupSelect01").val();
+    var order_address = $("#input-3").val();
+    var order_number = $("#input-4").val();
+
+    if (order_name === "") {
+      alert("주문자 이름을 입력해주세요!");
+    } else if (order_quantity === "") {
+      alert("수량을 입력해주세요!");
+    } else if (order_address === "") {
+      alert("주소를 입력해주세요!");
+    } else if (order_number === "") {
+      alert("전화번호를 입력해주세요!");
+    } else {
+      alert("주문이 완료되었습니다! 감사합니다.");
+    }
+  }
+</script>
 
 
 
 </head>
 
+
 <body>
 
     <div class="container">
 <div class="form-post" id="product-photo">
-<img src="https://i.pinimg.com/originals/d0/40/a9/d040a96c05577990158b9deec9093071.jpg"
-/>
+<img 
+src="https://i.pinimg.com/originals/d0/40/a9/d040a96c05577990158b9deec9093071.jpg" alt=""
+style="width: auto; height: auto; margin: 50px">
+
+
 <div>
 <br>
 <span style="color:black; font-size : 40px;"> 캐틀벨 </span>
@@ -56,29 +68,29 @@ margin: 2rem auto;
 
 <!-- 주문 입력정보 -->
 <br>
-<div class="input-group mb-3">
+<div class="input-group mb-1">
     <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">주문자이름</span>
     </div>
-    <input type="text" class="form-control" placeholder=" " aria-label=" " aria-describedby="basic-addon1">
+    <input type="text" class="form-control" id="input-1" placeholder=" " aria-label=" " aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group mb-2">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon2">주소</span>
+    </div>
+    <input type="text" class="form-control"id="input-3"  placeholder=" " aria-label=" " aria-describedby="basic-addon1">
   </div>
 
   <div class="input-group mb-3">
     <div class="input-group-prepend">
-      <span class="input-group-text" id="basic-addon1">주문자이름</span>
+      <span class="input-group-text" id="basic-addon3">전화번호</span>
     </div>
-    <input type="text" class="form-control" placeholder=" " aria-label=" " aria-describedby="basic-addon1">
-  </div>
-
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="basic-addon1">주문자이름</span>
-    </div>
-    <input type="text" class="form-control" placeholder=" " aria-label=" " aria-describedby="basic-addon1">
+    <input type="text" class="form-control" id="input-4" placeholder=" " aria-label=" " aria-describedby="basic-addon1">
   </div>
 
 <!-- 수량 선택 -->
-  <div class="input-group mb-3">
+  <div class="input-group mb-4">
     <div class="input-group-prepend">
       <label class="input-group-text" for="inputGroupSelect01">수량</label>
     </div>
@@ -92,12 +104,19 @@ margin: 2rem auto;
 
 <!-- 버튼 -->
 <div class="text-center">
-    <button type="button" class="btn btn-primary">주문하기</button>
+    <button class="btn btn-primary" onclick="check()" type="submit">주문하기
+    </button>
   </div>
+
+
 
 </div>
 
 </div>
     
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>
